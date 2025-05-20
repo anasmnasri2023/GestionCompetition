@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Competitions from './Competitions/Competitions';
 import Home from './Home/Home';
 import NavigationBar from './NavigationBar/NavigationBar';
+import NotFound from './NotFound/NotFound';
+import CompetitionDetails from './Competitions/CompetitionDetails';
 
 function App() {
   return (
@@ -16,6 +18,9 @@ function App() {
           <Routes>
             <Route path="/Home" element={<Home />} />
             <Route path="/competitions" element={<Competitions />} />
+              <Route path="/competitions/:id" element={<CompetitionDetails />} />
+
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
       </div>
