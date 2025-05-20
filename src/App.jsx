@@ -14,7 +14,7 @@ function App() {
         <NavigationBar />
         <main className="p-4">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/Home" element={<Home />} />
             <Route path="/competitions" element={<Competitions />} />
           </Routes>
         </main>

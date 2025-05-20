@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const NavigationBar = () => (
   <nav className="bg-gray-50 px-8 py-4 flex space-x-6 text-xl font-light">
     <NavLink
-      to="/"
+      to="/Home"
       end
       className={({ isActive }) =>
         isActive
